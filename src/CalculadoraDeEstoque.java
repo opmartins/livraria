@@ -2,12 +2,8 @@ public class CalculadoraDeEstoque {
     public static void main(String[] args) {
        
         double soma = 0;
-        int contador = 1;
-
-        while (contador <=35) {
-            double valorDoLivro = 59.90;
-            soma += valorDoLivro;
-            contador++;
+        for (double i = 0; i <35 ; i ++) {
+            soma += 59.90; // Preço fixo de cada produto
         }
 
         System.out.println("O valor total em estoque é: " + soma);
