@@ -13,6 +13,9 @@ public class CadastroDeLivros {
         livro.isbn = "978-85-66250-46-6";
         livro.autor = autor;
 
+        if (!livro.aplicaDescontoDe(0.5)){
+            System.out.println("Desconto não pode ser maior do que 30%");
+        }
         livro.mostrarDetalhes();
 
         Autor outroAutor = new Autor();
