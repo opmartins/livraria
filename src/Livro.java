@@ -1,7 +1,7 @@
 public class Livro {
     String nome;
     String descricao;
-    double valor;
+    private double valor;
     String isbn;
     Autor autor;
 
