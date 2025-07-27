@@ -3,15 +3,17 @@ public class RegrasDeDesconto {
         
         double desconto = 0.4;
 
-        Livro livro = new Livro();
-        livro.valor = 59.90;
+        Autor autor = new Autor();
+        Livro livro = new Livro(autor);
+        
+        livro.setValor(59.90);
 
-        System.out.println("Valor atual: " + livro.valor);
+        System.out.println("Valor atual: " + livro.getValor());
 
         if (!livro.aplicaDescontoDe(desconto)){
             System.out.println("Desconto não pode ser maior do que 30%.");
         } else {
-            System.out.println("Valor com desconto: " + livro.valor);
+            System.out.println("Valor com desconto: " + livro.getValor());
         }
     }
 }
