@@ -3,6 +3,7 @@ public class Autor {
     private String email;
     private String cpf;
 
+    
     void mostrarDetalhes() {
         System.out.println("Mostrando detalhes do autor.");
         System.out.println("Nome: " + nome);
@@ -32,5 +33,10 @@ public class Autor {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+    @Override
+    public String toString() {
+        return " Autor do livro: " + nome;
     }
 }

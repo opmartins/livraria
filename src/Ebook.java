@@ -24,4 +24,11 @@ public class Ebook extends Livro{
         return waterMark;
     }
 
+    @Override
+    public String toString() {
+        return "Este é um livro Digital." + waterMark;
+    }
+
+    
+
 }

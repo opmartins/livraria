@@ -6,8 +6,10 @@ public class RegrasDeDesconto {
 
         Autor autor = new Autor();
         Livro livro = new Livro(autor);
-        
+               
         livro.setValor(59.90);
+
+        System.out.println(livro);
 
         if (!livro.aplicaDescontoDe(descontoFisico)){
             System.out.println("Desconto no livro não pode ser maior do que 30%.");
