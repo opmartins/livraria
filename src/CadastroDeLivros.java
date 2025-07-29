@@ -1,7 +1,7 @@
 public class CadastroDeLivros {
     public static void main (String[] args) {
 
-        double desconto = 0.6;
+        double desconto = 0.3;
 
         Autor autor = new Autor();
         autor.setNome("Rodrigo Turini");
