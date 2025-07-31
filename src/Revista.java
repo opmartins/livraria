@@ -30,6 +30,7 @@ public class Revista implements Produto {
         this.descricao = descricao;
     }
 
+    @Override
     public double getValor() {
         return valor;
     }
