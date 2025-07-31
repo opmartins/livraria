@@ -46,6 +46,7 @@ public abstract class Livro implements Produto{
         this.descricao = descricao;
     }
 
+    @Override
     public double getValor() {
         return valor;
     }
