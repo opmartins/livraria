@@ -2,6 +2,7 @@ package br.com.casadocodigo.livraria.teste;
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
 public class RegistroDeVendas {
     public static void main(String[] args) {
@@ -24,6 +25,14 @@ public class RegistroDeVendas {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
+
+        Produto[] produtos = carrinho.getProdutos();
+        for (int i = 0; i < produtos.length; i++){
+            Produto produto = produtos[i];
+            if (produto != null){
+                System.out.println(produto.getValor());
+            }
+        }
 
         System.out.println("Total: " + carrinho.getTotal());
         
