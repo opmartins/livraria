@@ -10,6 +10,9 @@ public abstract class Livro implements Produto{
     private Autor autor;
 
     public Livro(Autor autor) {
+        if (autor == null){
+            throw new RuntimeException("O autor do Livro não pode ser nulo.");
+        }
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
     }

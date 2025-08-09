@@ -27,12 +27,20 @@ public class RegistroDeVendas {
         carrinho.adiciona(ebook);
 
         Produto[] produtos = carrinho.getProdutos();
-        for (int i = 0; i < produtos.length; i++){
+        
+        for (int i = 0; i <= produtos.length; i++){
+            try {
             Produto produto = produtos[i];
             if (produto != null){
                 System.out.println(produto.getValor());
             }
+        } catch (Exception e){
+            System.out.println("Deu exception no indice: " + i);
+            e.printStackTrace();
         }
+        }
+        
+
 
         System.out.println("Total: " + carrinho.getTotal());
         
